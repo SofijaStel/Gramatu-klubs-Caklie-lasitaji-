@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grāmatu Klubs "Čaklie lasītāji"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 767px)" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grāmatu Klubs "Čaklie lasītāji"</h1>
+        <nav>
+            <ul>
+                <li><a href=" https://sofijastel.github.io/Par-mums/">Par mums</a></li>
+                <li><a href="https://sofijastel.github.io/Ieteikumi/">Ieteikumi</a></li>
+                <li><a href="https://sofijastel.github.io/Menesa-gramata/">Mēneša grāmata</a></li>
+                <li><a href=" https://sofijastel.github.io/Forums/">Forums</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="site-content">
+        <section class="intro-section">
+            <h2>Laipni lūgti mūsu grāmatu klubā!</h2>
+            <p>Šī ir vieta, kur satikt citus lasītājus, dalīties ar atsauksmēm un atrast nākamo lielisko lasāmvielu!</p>
+        </section>
+        <section id="top-books">
+            <h3>Top 5 grāmatas 2025. gadā</h3>
+            <hr>
+            <div class="book-covers">
+                <a href="https://sofijastel.github.io/Tiksanas-laika/">
+                    <img src="https://www.zvaigzne.lv/media/catalog/product/cache/10c7af824b2f3b05fb537658386332ea/t/i/tiksanaas_laikaa_fin_1_1.jpg" alt="Tikšanās laikā">
+                </a>
+                <a href="https://sofijastel.github.io/Deja-mila-Parize/">
+                    <img src="https://www.janisroze.lv/media/catalog/product/cache/bb4393040b3554cccd511c0402ed666c/image/240355a05/deja-mila-parize.jpg" alt="Deja, mīla, Parīze"> 
+                </a>
+                <a href="https://sofijastel.github.io/Melndzelmji/">
+                    <img src="https://www.janisroze.lv/media/catalog/product/cache/bb4393040b3554cccd511c0402ed666c/image/185678ebf/melndzelmji.jpg" alt="Melndzelmji">
+                </a>
+                <a href="https://sofijastel.github.io/Mana-kolosala-dzive/">
+                    <img src="https://www.janisroze.lv/media/catalog/product/cache/d6332fc9a484d8b6046c872475614cf4/image/15835e844/mana-kolosala-dzive.jpg" alt="Mana kolosālā dzīve">
+                </a>
+                <a href="https://sofijastel.github.io/Zala-dzile/">
+                    <img src="https://www.janisroze.lv/media/catalog/product/cache/d6332fc9a484d8b6046c872475614cf4/image/18260c8f0/zala-dzile.jpg" alt="Zaļā dzīle">
+                </a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nosaukums</th>
+                        <th>Autors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1.</td><td>Tikšanās laikā</td><td>Elizabete Eglīte</td></tr>
+                    <tr><td>2.</td><td>Deja, mīla, Parīze</td><td>Anna Sofija Žuano</td></tr>
+                    <tr><td>3.</td><td>Melndzelmji</td><td>Igne Zarambaite</td></tr>
+                    <tr><td>4.</td><td>Mana kolosālā dzīve</td><td>Jennija Jēgerfelde</td></tr>
+                    <tr><td>5.</td><td>Zaļā dzīle</td><td>Toms Deimonds Barvidis</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="forum-section">
+            <div class="form-wraper">
+            <h3>Atstāj savu atsauksmi</h3>
+
+            <input type="text" id="nameInput" placeholder="Tavs vārds..." required>
+            <textarea id="commentInput" rows="5" placeholder="Tava atsauksme..."></textarea>
+            <button onclick="addComment()">Publicēt atsauksmi</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Grāmatu Klubs. Visas tiesības aizsargātas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
