@@ -1,13 +1,12 @@
-@media screen and (max-width: 767px){
-    body {
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     color: #222;
     line-height: 1.6;
 }
-}
+
 header {
     padding: 30px 20px;
     text-align: center;
@@ -23,6 +22,7 @@ h1 {
         margin-bottom: 20px;
         text-shadow: 2px 2px 4px #000000; 
     }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -38,7 +38,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    font-size: 23px;
+    font-size: 20px;
     color: #fff;
     font-weight: bold;
     padding: 5px 10px;
@@ -71,8 +71,9 @@ nav a:hover {
 }
 
 .book-covers img {
-    max-width: 160px;
-    height: auto;
+    width: 140px;               
+    height: 210px;              
+    object-fit: cover;          
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -158,4 +159,42 @@ footer {
     background-color: #5a5a5a;
     color: #fff;
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  nav a {
+    font-size: 16px;
+    display: block;
+    margin: 8px 0;
+  }
+
+  .book-covers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-covers img {
+    width: 70%;        
+    height: auto;
+  }
+
+  table, th, td {
+    font-size: 12px;
+  }
+
+  .form-wraper {
+    padding: 10px;
+  }
+
+  input, textarea, button {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
