@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grāmatu Klubs "Čaklie lasītāji"</title>
+      <!-- Fonts no Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Attēls fonā ideja ņemta no Latvijas Universitātes grāmatu kluba mājaslapas -->
     <header>
         <h1>Grāmatu Klubs "Čaklie lasītāji"</h1>
         <nav>
@@ -19,12 +21,14 @@
             </ul>
         </nav>
     </header>
-
+    <!-- Galvenais saturs -->
     <div class="site-content">
+         <!-- Ievads -->
         <section class="intro-section">
             <h2>Laipni lūgti mūsu grāmatu klubā!</h2>
             <p>Šī ir vieta, kur satikt citus lasītājus, dalīties ar atsauksmēm un atrast nākamo lielisko lasāmvielu!</p>
         </section>
+         <!-- Katram attēlam ir saite uz detalizētu aprakstu ideja ņemta no grāmatu kluba "Lasies"-->
         <section id="top-books">
             <h3>Top 5 grāmatas 2025. gadā</h3>
             <hr>
@@ -45,6 +49,7 @@
                     <img src="https://www.janisroze.lv/media/catalog/product/cache/d6332fc9a484d8b6046c872475614cf4/image/18260c8f0/zala-dzile.jpg" alt="Zaļā dzīle">
                 </a>
             </div>
+            <!-- Tabula ar grāmatu informāciju -->
             <table>
                 <thead>
                     <tr>
@@ -62,19 +67,36 @@
                 </tbody>
             </table>
         </section>
-
-        <section class="forum-section">
+        <!-- Atsauksmju forma -->
+       <section class="forum-section">
             <div class="form-wraper">
             <h3>Atstāj savu atsauksmi</h3>
-
+             <!-- Lietotāja vārda un komentāra ievade -->
             <input type="text" id="nameInput" placeholder="Tavs vārds..." required>
+<!--type="text" – Teksta ievades lauks.
+
+id="nameInput" – Unikāls ID, lai JavaScript varētu piekļūt šim laukam.
+
+placeholder="Tavs vārds..." – Pelēks teksts iekšā laukā kā piemērs.
+
+required – Norāda, ka lauks ir obligāts -->
             <textarea id="commentInput" rows="5" placeholder="Tava atsauksme..."></textarea>
-            <button onclick="addComment()">Publicēt atsauksmi</button>
-            </div>
+<!--textarea – Lielāks lauks, kur var rakstīt vairākus teikumus.
+
+rows="5" – Norāda teksta rindu skaitu.
+
+placeholder – Teksts, ko rādīt tukšā laukā.
+
+id="commentInput" – Tiks izmantots JavaScript.-->
+            <button onclick="addComment()">Publicēt atsauksmi</button><!--Kad spiež šo pogu, tiek izsaukta JavaScript funkcija-->
+    </div>
+</section>
+
         </section>
     </div>
+    <!-- Kājenes sadaļa -->
     <footer>
-        <p>&copy; 2025 Grāmatu Klubs. Visas tiesības aizsargātas.</p>
+        <p>&copy; 2025 Grāmatu Klubs. Visas tiesības aizsargātas.</p> <!-- &copy - izvada autortiesību simbolu: ©-->
     </footer>
 
     <script src="script.js"></script>

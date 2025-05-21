@@ -1,3 +1,4 @@
+/* Palīgmateriāls w3schools*/
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -11,7 +12,7 @@ header {
     padding: 30px 20px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ēna zem galvenes */
     background-image: url("https://i.postimg.cc/qMdmBTV4/Ekr-nuz-mums-2025-04-30-202722.png");
     background-repeat: repeat;
     background-position: center;
@@ -20,11 +21,11 @@ h1 {
         font-size: 45px; 
         text-align:center; 
         margin-bottom: 20px;
-        text-shadow: 2px 2px 4px #000000; 
+        text-shadow: 2px 2px 4px #000000; /* Melns ēnojums ap tekstu */
     }
 
 nav ul {
-    list-style: none;
+    list-style: none;  /* Noņem punktus no saraksta */
     padding: 0;
     margin: 15px 0 0;
     display: block;
@@ -37,7 +38,7 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Noņem apakšsvītru no saites */
     font-size: 20px;
     color: #fff;
     font-weight: bold;
@@ -46,8 +47,8 @@ nav a {
     text-shadow: 2px 2px 4px #000000; 
 }
 
-nav a:hover {
-    background-color: #333;
+nav a:hover { 
+    background-color: #333; /* Tumšāks fons, kad uzved peli */
     border-radius: 5px;
 }
 
@@ -65,7 +66,7 @@ nav a:hover {
 
 .book-covers {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   /* Atļauj rakstīt citā rindā, ja nepietiek vietas */
     justify-content: center;
     gap: 30px;
 }
@@ -73,15 +74,15 @@ nav a:hover {
 .book-covers img {
     width: 140px;               
     height: 210px;              
-    object-fit: cover;          
+    object-fit: cover;  /* Saglabā proporcijas, piegriež ja vajag */        
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animācijas efekti */
+    cursor: pointer; /* Pelīte kļūst par roku */
 }
 
 .book-covers img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05);/* Nedaudz palielina bildi */ 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* Ēna zem bildes */
 }
 
 table {
